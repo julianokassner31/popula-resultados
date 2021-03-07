@@ -15,7 +15,7 @@ public class ConfigDataSource {
     public DataSource getDataSource() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("org.postgresql.Driver");
-        dataSourceBuilder.url("jdbc:postgresql://localhost:5432/loteria_api");
+        dataSourceBuilder.url("jdbc:postgresql://pgdb:5432/loteria_api");
         dataSourceBuilder.username("postgres");
         dataSourceBuilder.password("postgres");
         return dataSourceBuilder.build();
